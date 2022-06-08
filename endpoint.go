@@ -191,7 +191,7 @@ func (e *Endpoint) Listen() {
 		}
 
 		if e.ph != nil {
-			e.ph(buf, e.addr)
+			e.ph(buf, conn.addr)
 		}
 	}
 
